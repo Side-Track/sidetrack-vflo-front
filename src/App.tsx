@@ -1,19 +1,12 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
 
 function App() {
 	return (
 		<div className="App">
-			<header className="App-header">
-				<img src={logo} className="App-logo" alt="logo" />
-				<p>
-					Edit <code>src/App.tsx</code> and save to reload.
-				</p>
-				<a className="App-link" href="https://reactjs.org" target="_blank" rel="noopener noreferrer">
-					Learn React
-				</a>
-			</header>
+			<div className="w-full h-screen flex flex-col items-center justify-center bg-blue-400 text-white">
+				<h1 className="text-5xl font-bold mb-4">VFLO</h1>
+				<p className="text-sm font-light">어떤 모습일지 기대하세요.</p>
+			</div>
 		</div>
 	);
 }
