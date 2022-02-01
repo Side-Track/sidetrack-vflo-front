@@ -4,6 +4,7 @@
     "esbenp.prettier-vscode",
     "bradlc.vscode-tailwindcss",
     "mf.vscode-styled-components",
-    "lightyen.tailwindcss-intellisense-twin"
+    "lightyen.tailwindcss-intellisense-twin",
+    "formulahendry.auto-rename-tag"
   ]
 }
