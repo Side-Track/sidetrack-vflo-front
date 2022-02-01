@@ -1,0 +1,8 @@
+{
+	// Set the default
+	"editor.formatOnSave": true,
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"eslint.alwaysShowStatus": true,
+	"eslint.debug": true,
+	"css.customData": [".vscode/css_custom_data.json"]
+}

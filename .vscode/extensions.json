@@ -1,0 +1,10 @@
+{
+  "recommendations": [
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode",
+    "bradlc.vscode-tailwindcss",
+    "mf.vscode-styled-components",
+    "lightyen.tailwindcss-intellisense-twin",
+    "formulahendry.auto-rename-tag"
+  ]
+}
