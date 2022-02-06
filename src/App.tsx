@@ -7,7 +7,7 @@ const AuthSignupPage = lazy(() => import('./pages/auth/signup'));
 
 const EditorDashBoard = lazy(() => import('./pages/editor'));
 const EditorSettingPage = lazy(() => import('./pages/editor/setting'));
-
+  
 const AdminPage = lazy(() => import('./pages/admin'));
 
 const Loading = () => (
