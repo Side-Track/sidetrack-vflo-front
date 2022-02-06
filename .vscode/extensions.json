@@ -5,6 +5,7 @@
     "bradlc.vscode-tailwindcss",
     "mf.vscode-styled-components",
     "lightyen.tailwindcss-intellisense-twin",
-    "formulahendry.auto-rename-tag"
+    "formulahendry.auto-rename-tag",
+    "zachhardesty.jsdoc-comment-toggler"
   ]
 }
