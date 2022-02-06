@@ -7,6 +7,7 @@ const OnWorking = styled.div`
 
   .title {
     ${tw`text-5xl font-bold mb-4`}
+    text-decoration: underline;
   }
 
   .message {
