@@ -1,12 +1,15 @@
 import React, { Suspense, lazy } from 'react';
 import { Routes, Route, Link } from 'react-router-dom';
-import { EditorPageLayout } from './components/Layout';
+import { EditorPageLayout, UserPageLayout } from './components/Layout';
 
 /**
  * @file App.tsx
  * - 각 라우팅별 다른 페이지를 불러오는 컴포넌트
  * - `lazy` 를 통해 비동기적으로 페이지를 불러오는 것을 권장
  */
+
+// 유저 (+ 비회원) 페이지
+const UserMainPage = lazy(() => import('./pages/user'));
 
 // 로그인 / 회원가입 페이지
 const AuthPage = lazy(() => import('./pages/auth'));
@@ -46,9 +49,12 @@ export default function App() {
     <>
       <Suspense fallback={<Loading />}>
         <Routes>
-          <Route path="/">
-            <Route path="/" element={<AuthPage />} />
-            <Route path="/signup" element={<AuthSignupPage />} />
+          <Route path="/" element={<UserPageLayout />}>
+            <Route path="/" element={<UserMainPage />} />
+          </Route>
+          <Route path="/auth">
+            <Route path="/auth/" element={<AuthPage />} />
+            <Route path="/auth/signup" element={<AuthSignupPage />} />
           </Route>
           <Route path="/editor" element={<EditorPageLayout />}>
             <Route path="/editor/" element={<EditorDashBoard />} />

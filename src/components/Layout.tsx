@@ -19,3 +19,22 @@ export const EditorPageLayout = () => {
     </>
   );
 };
+
+export const UserPageLayout = () => {
+  return (
+    <>
+      <nav>
+        {/* <h1>VFLO</h1> */}
+        {/* <ul>
+          <li>
+            <Link to="/">HOME</Link>
+          </li>
+          <li>
+            <Link to="/auth">로그인</Link>
+          </li>
+        </ul> */}
+      </nav>
+      <Outlet />
+    </>
+  );
+};
