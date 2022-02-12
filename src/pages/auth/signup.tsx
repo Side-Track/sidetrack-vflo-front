@@ -142,22 +142,22 @@ const AuthSignupPage = () => {
           <FieldItem>
             <div className=" bg-gray-100 text-center p-4">
               <MailIcon className="w-10 block mx-auto mb-4" />
-              <em className="font-bold not-italic text-blue-500">test@example.com</em> 으로 인증번호를 전송했습니다.
+              <em className="font-bold not-italic text-blue-500">test@example.com</em> 으로 인증코드를 전송했습니다.
               <br />
               이메일을 확인하여 입력해주세요.
             </div>
           </FieldItem>
           <FieldItem>
             <label className="block text-sm font-bold mb-1" htmlFor="verify-code">
-              인증번호
+              인증코드
             </label>
             <input
               className="block border-2 border-gray-300 w-full p-2 rounded-lg"
               id="verify-code"
               type="text"
-              placeholder="인증번호"
+              placeholder="인증코드"
             />
-            <p className="text-sm mt-2 font-normal text-red-500">인증번호가 올바르지 않습니다.</p>
+            <p className="text-sm mt-2 font-normal text-red-500">인증코드가 올바르지 않습니다.</p>
           </FieldItem>
           <FieldItem bottom>
             <button
