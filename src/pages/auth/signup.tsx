@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import tw from 'twin.macro';
-import { EyeIcon, EyeOffIcon, ArrowRightIcon, ArrowLeftIcon, CheckCircleIcon } from '@heroicons/react/solid';
+import { EyeIcon, ArrowRightIcon, ArrowLeftIcon, CheckCircleIcon } from '@heroicons/react/solid';
 import { MailIcon } from '@heroicons/react/outline';
 import { useState } from 'react';
 import { useEffect } from 'react';
