@@ -1,6 +1,6 @@
-import React, { lazy } from 'react';
+import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter } from 'react-router-dom';
 import './index.css';
 import GlobalStyles from './styles/GlobalStyles';
 import App from './App';
