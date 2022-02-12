@@ -26,15 +26,19 @@ const FieldSet = ({ show, title, children }) => {
     show && (
       <fieldset className="flex flex-col w-full flex-grow pt-4">
         <legend className="table clear-both p-0 float-left font-bold text-lg mb-8">{title}</legend>
-        <div className="clear-both flex-grow relative">{children}</div>
+        <div className="clear-both flex-grow relative flex flex-col">{children}</div>
       </fieldset>
     )
   );
 };
 
 const FieldItem = styled.div<{ bottom?: boolean }>`
-  ${({ bottom }) => (bottom ? tw`absolute bottom-0 left-0 w-full flex` : tw`relative`)}
+  ${({ bottom }) => (bottom ? tw` w-full flex flex-grow align-items[flex-end]` : tw`relative`)}
   ${tw`mb-4`}
+
+  &:last-child {
+    ${tw`mb-0`}
+  }
 `;
 
 const ExampleTerms = () => {
