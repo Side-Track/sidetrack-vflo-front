@@ -3,6 +3,11 @@ import styled from 'styled-components';
 import tw from 'twin.macro';
 import { up, down } from 'styled-breakpoints';
 
+import { useDispatch, useSelector } from 'react-redux';
+import { increase } from '../../feature/counter/counterSlice';
+import { RootState } from '../../feature/reducer';
+import store from '../../store';
+
 const Wrapper = styled.div`
   /* PC */
   ${tw`lg:flex lg:flex-row`}
@@ -73,10 +78,20 @@ const Wrapper = styled.div`
 `;
 
 const AuthPage = () => {
+  const dispatch = useDispatch();
+  const counter = useSelector((state: RootState) => state.counter);
+
   return (
     <Wrapper>
       <header className="header">
-        <h1 className="title">VFLO</h1>
+        <h1
+          className="title"
+          onClick={(e) => {
+            dispatch(increase());
+          }}
+        >
+          VFLO {counter.count}
+        </h1>
         <Link className="signup" to="/auth/signup">
           처음 오시나요?
         </Link>
