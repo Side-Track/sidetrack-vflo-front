@@ -23,5 +23,5 @@ VFLO는 미연시와 같은 슬라이드형 컨텐츠를 웹으로 제작할 수
 
 1. 먼저 `node -v` 를 통해 현재 노드 버전이 16.13.1 이상인지 확인합니다.
 2. `npm install --save` 를 통해 dependencies 를 다운받습니다.
-3. `.env.development` 와 `.env.production` 을 루트 디렉토리에 구성하고, 환경설정값을 입력합니다. 입력 예시는 `.env.sample` 에서 확인 할 수 있습니다.
-4. `npm run dev` 를 통해 실행하게 되면 `http://localhost:3000/` 에서 확인 할 수 있습니다.
+3. `.env` 파일 을 생성하여 환경을 설정합니다. (`.env.sample` 참고)
+4. `npm run start` 를 통해 실행하게 되면 `http://localhost:3000/` 에서 확인 할 수 있습니다.
